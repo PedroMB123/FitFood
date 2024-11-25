@@ -1,21 +1,20 @@
-.header{
-
+.header {
     display: flex;
     height: 110px;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 20px; /* Espaçamento entre os itens (adicionado gap) */
 
     position: relative;
-
     overflow: hidden;
 
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
     z-index: 1000;
     position: fixed;
@@ -23,15 +22,18 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 25px;
 }
 
-
-.header a img{
-height: 140px;
-display: flex;
+.header a img {
+    height: 140px;
+    display: flex;
 }
 
 .menu {
     display: flex;
-
     position: absolute;
-    left: 40px
+    left: 40px;
+}
+
+/* Espaçamento extra para ícones */
+.header a {
+    margin: 0 10px; /* Espaço de 10px entre cada link */
 }
