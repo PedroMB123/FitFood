@@ -6,12 +6,13 @@
   justify-content: flex-start; /* Posiciona os itens na sequência */
   align-items: center; /* Centraliza verticalmente os itens */
   overflow: hidden; /* Garante que apenas os itens visíveis sejam mostrados */
-  position: relative; /* Necessário para posicionamento dos itens */
+  position: relative; /* Necessário para animações */
   background-color: transparent; /* Fundo transparente */
 }
 
-.carousel:hover .wrap {
-  animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+.carousel .carousel-track {
+  display: flex;
+  animation: scroll 10s linear infinite; /* Animação contínua */
 }
 
 .carousel .wrap {
@@ -35,13 +36,13 @@
   object-fit: cover; /* Ajusta a imagem sem distorção */
 }
 
-/* Animação */
-@keyframes image {
-  from {
-      transform: translateX(100%); /* Começa fora da tela à direita */
+/* Animação para movimento automático */
+@keyframes scroll {
+  0% {
+      transform: translateX(0); /* Posição inicial */
   }
-  to {
-      transform: translateX(-100%); /* Move para fora da tela à esquerda */
+  100% {
+      transform: translateX(-100%); /* Move todos os itens para fora da tela */
   }
 }
 
@@ -49,7 +50,6 @@
 @media (max-width: 768px) {
   .carousel {
       height: 300px; /* Reduz a altura em telas menores */
-      flex-wrap: nowrap; /* Mantém os itens em uma única linha */
   }
 
   .carousel .wrap {
