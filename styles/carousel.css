@@ -3,9 +3,9 @@
   height: 400px;
 
   display: flex;
-  justify-content: center;
-  align-items: center; /* Centraliza os itens verticalmente */
-  overflow: hidden; /* Garante que apenas os elementos visíveis sejam mostrados */
+  justify-content: flex-start; /* Posiciona os itens na sequência */
+  align-items: center; /* Centraliza verticalmente os itens */
+  overflow: hidden; /* Garante que apenas os itens visíveis sejam mostrados */
   position: relative; /* Necessário para posicionamento dos itens */
   background-color: transparent; /* Fundo transparente */
 }
@@ -15,21 +15,18 @@
 }
 
 .carousel .wrap {
+  flex: 0 0 auto; /* Garante que cada item ocupe seu espaço sem encolher */
   width: 250px;
   height: 250px;
 
-  position: absolute;
-  left: 100%; /* Inicia fora da área visível */
-  animation: image 3s linear infinite; /* Animação contínua de deslocamento */
-  animation-delay: var(--delay);
-
+  margin-right: 10px; /* Espaçamento entre os itens */
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.7s ease; /* Transição suave para hover */
 }
 
 .carousel .wrap:hover {
-  transform: scale(1.2); /* Amplia o elemento ao passar o mouse */
+  transform: scale(1.2); /* Amplia o item ao passar o mouse */
 }
 
 .carousel .wrap img {
@@ -41,21 +38,22 @@
 /* Animação */
 @keyframes image {
   from {
-      left: 100%; /* Começa fora da tela */
+      transform: translateX(100%); /* Começa fora da tela à direita */
   }
   to {
-      left: 0%; /* Move para dentro do viewport */
+      transform: translateX(-100%); /* Move para fora da tela à esquerda */
   }
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .carousel {
-      height: 300px; /* Reduz a altura para telas menores */
+      height: 300px; /* Reduz a altura em telas menores */
+      flex-wrap: nowrap; /* Mantém os itens em uma única linha */
   }
 
   .carousel .wrap {
-      width: 200px; /* Ajusta a largura em smartphones */
+      width: 200px; /* Ajusta o tamanho dos itens */
       height: 200px;
   }
 }
