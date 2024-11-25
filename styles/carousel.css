@@ -4,10 +4,10 @@
 
   display: flex;
   justify-content: center;
-  align-items: center; /* Alinha verticalmente o conteúdo */
+  align-items: center; /* Centraliza os itens verticalmente */
   overflow: hidden; /* Garante que apenas os elementos visíveis sejam mostrados */
   position: relative; /* Necessário para posicionamento dos itens */
-  background-color: #f4f4f4; /* Fundo neutro para destacar o carousel */
+  background-color: transparent; /* Fundo transparente */
 }
 
 .carousel:hover .wrap {
@@ -29,32 +29,33 @@
 }
 
 .carousel .wrap:hover {
-  transform: scale(1.2); /* Amplia o elemento quando está em hover */
+  transform: scale(1.2); /* Amplia o elemento ao passar o mouse */
 }
 
 .carousel .wrap img {
   height: 100%;
   width: 100%;
-  object-fit: cover; /* Garante que as imagens se ajustem sem deformar */
+  object-fit: cover; /* Ajusta a imagem sem distorção */
 }
 
+/* Animação */
 @keyframes image {
   from {
       left: 100%; /* Começa fora da tela */
   }
   to {
-      left: 0%; /* Termina dentro da área visível */
+      left: 0%; /* Move para dentro do viewport */
   }
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .carousel {
-      height: 300px; /* Reduz a altura em dispositivos menores */
+      height: 300px; /* Reduz a altura para telas menores */
   }
 
   .carousel .wrap {
-      width: 200px; /* Reduz o tamanho do slide */
+      width: 200px; /* Ajusta a largura em smartphones */
       height: 200px;
   }
 }
