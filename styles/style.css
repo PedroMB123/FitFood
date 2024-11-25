@@ -16,7 +16,7 @@ main{
     min-height: 200vh;
     flex-direction: column;
 
-    background-image: url(/images/Design\ sem\ nome.png);
+    background-image: url(images/Design\ sem\ nome.png);
     background-size: cover;
     background-attachment: scroll;
 }
