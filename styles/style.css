@@ -1,14 +1,13 @@
-*{
+/* Estilo base */
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
     text-decoration: none;
     list-style: none;
-
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +20,7 @@ main{
     background-attachment: scroll;
 }
 
-.manchete a div{
+.manchete a div {
     height: 250px;
     width: 600px;
 
@@ -34,4 +33,21 @@ main{
 
     box-shadow: 10px 10px 10px 10px black;
     background-color: black;
+}
+
+/* Estilo para smartphones (largura máxima de 768px) */
+@media (max-width: 768px) {
+    main {
+        min-height: 100vh; /* Ajuste para evitar rolagem desnecessária */
+        padding: 20px; /* Espaçamento interno para telas menores */
+        background-attachment: fixed; /* Fixa o fundo em dispositivos menores */
+    }
+
+    .manchete a div {
+        height: 150px; /* Reduz a altura do bloco */
+        width: 90%; /* Ocupa 90% da largura da tela */
+        margin-top: 50px; /* Reduz margens */
+        margin-bottom: 100px; /* Ajusta a margem inferior */
+        box-shadow: 5px 5px 5px 5px black; /* Reduz a sombra para ficar proporcional */
+    }
 }
