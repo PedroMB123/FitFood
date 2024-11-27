@@ -21,6 +21,7 @@ main {
 }
 
 .manchete a div {
+
     height: 100vh;
     width: 100vh;
 
@@ -47,10 +48,10 @@ main {
     }
 
     .manchete a div {
-        height: 150px; /* Reduz a altura do bloco */
-        width: 90%; /* Ocupa 90% da largura da tela */
-        margin-top: 50px; /* Reduz margens */
-        margin-bottom: 100px; /* Ajusta a margem inferior */
-        box-shadow: 5px 5px 5px 5px black; /* Reduz a sombra para ficar proporcional */
+        height: 30vh;
+        width: 30vh; 
+        margin-top: 50px; 
+        margin-bottom: 100px; 
+        box-shadow: 5px 5px 5px 5px black; 
     }
 }

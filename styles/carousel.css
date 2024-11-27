@@ -51,11 +51,11 @@
 /* Responsividade */
 @media (max-width: 768px) {
   .carousel {
-      height: 300px; /* Reduz a altura para telas menores */
+      height: 20vh; /* Reduz a altura para telas menores */
   }
 
   .carousel .wrap {
-      width: 200px; /* Ajusta a largura em smartphones */
-      height: 200px;
+      width: 15vh; /* Ajusta a largura em smartphones */
+      height: 15vh;
   }
 }
