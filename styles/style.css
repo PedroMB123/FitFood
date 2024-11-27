@@ -21,8 +21,8 @@ main {
 }
 
 .manchete a div {
-    height: 250px;
-    width: 600px;
+    height: 100vh;
+    width: 100vh;
 
     display: flex;
     justify-content: center;
@@ -33,6 +33,9 @@ main {
 
     box-shadow: 10px 10px 10px 10px black;
     background-color: black;
+    background-image: url("/images/WhatsApp\ Image\ 2024-11-27\ at\ 15.16.14.jpeg");
+    background-repeat: none;
+    background-size: cover;
 }
 
 /* Estilo para smartphones (largura máxima de 768px) */
