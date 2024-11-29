@@ -25,7 +25,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 70px); /* Altura da tela menos o cabeçalho */
+    height: 270vh;
     background-color: #f4f4f4;
     padding: 20px;
     box-sizing: border-box;

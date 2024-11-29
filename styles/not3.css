@@ -13,7 +13,7 @@ main{
     justify-content: center;
     align-items: center;
 
-    min-height: 200vh;
+    min-height: 240vh;
     flex-direction: column;
 
     background-image: url(/images/Design\ sem\ nome.png);
@@ -25,7 +25,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 70px); /* Altura da tela menos o cabeçalho */
+    height: (100vh-70px);
     background-color: #f4f4f4;
     padding: 20px;
     box-sizing: border-box;

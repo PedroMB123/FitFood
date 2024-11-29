@@ -22,8 +22,8 @@ main{
 }
 
 main div{
-    height: 250px;
-    width: 250px;
+    min-height: 50vh;
+    min-width: 50vh;
 
     display: flex;
 
@@ -38,15 +38,12 @@ main div{
 
     justify-content: center;
     align-items: center;
+
+    border-radius: 10px;
 }
 
 main div h1{
      text-align: center; 
-}
-
-.spotify{
-    background-image: url("/images/spotify.png");
-    background-size: contain;
 }
 
 .insta{
@@ -54,4 +51,13 @@ main div h1{
     background-size: contain;
     background-repeat: no-repeat;
     background-color: 100%;
+}
+
+.hist{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: column;
 }
