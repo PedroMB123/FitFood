@@ -13,7 +13,7 @@ main{
     justify-content: center;
     align-items: center;
 
-    min-height: 240vh;
+    min-height: 200vh;
     flex-direction: column;
 
     background-image: url(/images/Design\ sem\ nome.png);
@@ -38,8 +38,6 @@ main{
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 .main-headline img {

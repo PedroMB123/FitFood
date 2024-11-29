@@ -1,18 +1,32 @@
-footer{
-    display: flex;
-    height: 100px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
 
-    position: relative;
+footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    font-size: 1em; /* Tamanho base do texto */
+    border-top: 5px solid #555; /* Linha no topo para destaque */
+}
 
-    overflow: hidden;
+footer p {
+    margin: 10px 0; /* Margem vertical para espaçamento */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
 
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.5);
+footer h1 {
+    font-size: 1.2em; /* Tamanho maior para o destaque */
+    margin-top: 15px; /* Espaço acima do título */
+    color: #f0a500; /* Cor destacada para o nome */
+    font-weight: bold; /* Negrito */
+}
 
-    z-index: 1000;
+footer a {
+    color: #1e90ff; /* Azul para links */
+    text-decoration: none; /* Remove sublinhado */
+}
 
-    justify-content: space-around;
+footer a:hover {
+    color: #ffa500; /* Cor dos links ao passar o mouse */
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
 }

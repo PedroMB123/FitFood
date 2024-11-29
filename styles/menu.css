@@ -1,63 +1,110 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
     text-decoration: none;
     list-style: none;
-
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    min-height: 200vh;
     flex-direction: column;
-    
+    min-height: 200vh;
     background-image: url(/images/Design\ sem\ nome.png);
     background-size: cover;
     background-attachment: scroll;
+    font-family: Arial, sans-serif;
 }
 
-main div{
+main div {
     min-height: 50vh;
     min-width: 50vh;
-
     display: flex;
-
     justify-content: space-around;
-
-    margin-top: 10px;
+    align-items: center;
+    margin-top: 20px;
     margin-bottom: 90px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
 
-    box-shadow: 10px 10px 10px 10px black;
+}
 
-    font-size: 10px;
+main h1{
+    margin-top: 200px;
+}
 
+main div h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.insta {
+    flex: 1;
+    background-image: url("/images/insta.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
     justify-content: center;
     align-items: center;
+    border-right: 2px solid #fff; /* Linha para dividir visualmente */
 
-    border-radius: 10px;
 }
 
-main div h1{
-     text-align: center; 
-}
-
-.insta{
-    background-image: url("/images/insta.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: 100%;
-}
-
-.hist{
-    background-color: black;
+.insta a {
+    font-size: 1.2em;
     color: white;
-    font-size: 15px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
 
+.insta a:hover {
+    color: #ffa500; /* Cor de destaque ao passar o mouse */
+}
+
+.hist {
+    flex: 2;
+    background-color: #222; /* Fundo mais elegante */
+    color: white;
+    font-size: 1.1em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hist p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.hist h1 {
+    color: #ffa500; /* Título destacado em laranja */
+    margin-bottom: 15px;
+}
+
+.hist button {
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #222;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.hist button:hover {
+    background-color: #e59400;
+    transform: scale(1.05);
 }
